@@ -12,7 +12,7 @@ public class TestController {
     TestService testService;
 
     @GetMapping("/test")
-    public List<Member> getALlMembers() {
+    public List<Member> getAllMembers() {
         List<Member> members = testService.getAllMembers();
         return members;
     }
