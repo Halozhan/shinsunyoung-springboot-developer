@@ -46,6 +46,8 @@ dependencies {
 	implementation 'javax.xml.bind:jaxb-api:2.3.1'
 	// OAuth2를 사용하기 위한 스타터
 	implementation 'org.springframework.boot:spring-boot-starter-oauth2-client'
+	// PostgreSQL 드라이버
+	runtimeOnly 'org.postgresql:postgresql'
 }
 
 tasks.named('test') {
