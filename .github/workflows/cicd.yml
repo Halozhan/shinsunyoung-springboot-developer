@@ -19,6 +19,9 @@ jobs:
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
 
+      - name: CI environment
+        run: echo "SPRING_PROFILES_ACTIVE=ci" >> $GITHUB_ENV
+
       - name: Build with Gradle
         run: ./gradlew clean build
 
